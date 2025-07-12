@@ -1,12 +1,12 @@
-import Image from "next/image";
+// import Image from "next/image";
+import HeroSection from "./sections/HeroSection";
 import KeyFeature from "./sections/KeyFeature";
-import SubscriptionSection from "./sections/SubscriptionSection";
 
 export default function Home() {
   return (
-    <main>
+    <main className="px-4 lg:px-28">
+      <HeroSection />
       <KeyFeature />
-      <SubscriptionSection />
     </main>
   );
 }
