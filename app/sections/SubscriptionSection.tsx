@@ -1,6 +1,6 @@
 export default function SubscriptionSection() {
   return (
-    <section className="flex items-center justify-center mt-7  bg-gradient-to-r from-linkbg to-[#017648] h-[250px] px-[16px] lg:px-[25%]">
+    <section className="flex items-center justify-center mt-7  bg-gradient-to-r from-linkbg to-[#017648] h-[250px] px-6 lg:px-[25%]">
       <div className="">
         <p className="text-center font-medium text-white">
           Join our newsletter to get early access to Edibo&apos;s Version 1 and
