@@ -1,7 +1,7 @@
 import { ArrowRightIcon } from "lucide-react";
 import Image from "next/image";
-import AnimatedHeader from "../components/AnimatedHeader";
-import AnimatedText from "../components/AnimatedText";
+import AnimatedHeader from "@/components/AnimatedHeader";
+import AnimatedText from "@/components/AnimatedText";
 
 export default function HeroSection() {
   return (
@@ -18,10 +18,6 @@ export default function HeroSection() {
             teams, and communities."
             delay={3}
           />
-          {/* <p className="starting:opacity-0">
-            Run smooth, transparent votes without stress, perfect for schools,
-            teams, and communities.
-          </p> */}
         </div>
         <div>
           <button className="bg-linkbg p-5 px-6 flex items-center gap-8 rounded-3xl">

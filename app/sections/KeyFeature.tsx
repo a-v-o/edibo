@@ -4,8 +4,8 @@ import {
   ShieldCheck,
   MonitorSmartphone,
 } from "lucide-react";
-import Image from "next/image";
-import FeatureCard from "../components/FeatureCard";
+// import Image from "next/image";
+import FeatureCard from "@/components/FeatureCard";
 
 export default function KeyFeature() {
   return (
