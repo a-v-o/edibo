@@ -5,68 +5,54 @@ import {
   MonitorSmartphone,
 } from "lucide-react";
 import Image from "next/image";
+import FeatureCard from "../components/FeatureCard";
 
 export default function KeyFeature() {
   return (
     <section>
-      <div>
-        <h2 className="text-center font-bold text-[27px]">Key Features</h2>
-        <p className="text-center font-normal text-[14px]">
-          Explore the powerful features that make Edibo the easiest way to vote
-          online.
-        </p>
-        <div className="mt-4 grid grid-cols-1 gap-4 lg:grid-cols-3 lg:grid-rows-2">
-          <div className="bg-featurebg rounded-[20px] flex flex-col gap-[10px] h-[205px] px-[20px] py-[45px] lg:col-start-1 lg:row-start-1">
-            <div className="flex flex-row items-center gap-x-2 ">
-              <Link2 className="bg-linkbg rounded-[10px] p-[10px] h-[40px] w-[40px] text-white" />
-              <p className="font-bold text-[16px]">One-Link Voting</p>
-            </div>
-            <p className="text-[14px] text-left">
-              Send a single link to your voters — no account, no app download
-              needed. Just click and vote.
-            </p>
-          </div>
-          <div className="bg-featurebg rounded-[20px] flex flex-col gap-[10px] h-[205px] px-[20px] py-[45px] lg:col-start-3 lg:row-start-1">
-            <div className="flex flex-row items-center gap-x-2">
-              <SlidersVertical className="bg-linkbg rounded-[10px] p-[10px] h-[40px] w-[40px] text-white" />
-              <p className="font-bold text-[16px]">
-                Easy Setup & Customization
-              </p>
-            </div>
-            <p className="text-[14px] text-left">
-              Create polls or elections in minutes with customizable options
-              tailored to your needs.
-            </p>
-          </div>
-          <div className="lg:flex lg:items-center lg:justify-center bg-featurebg hidden  lg:col-start-2 lg:row-start-1 lg:row-span-2 rounded-[20px]">
+      <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-4">
+          <h2 className="text-center font-bold text-3xl">Key Features</h2>
+          <p className="text-center">
+            Explore the powerful features that make Edibo the easiest way to
+            vote online.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-3 lg:grid-rows-2">
+          <FeatureCard
+            Icon={<Link2 />}
+            header="One-Link Voting"
+            text="Send a single link to your voters — no account, no app download
+              needed. Just click and vote."
+          />
+          <FeatureCard
+            Icon={<SlidersVertical />}
+            header="Easy Setup & Customization"
+            text="Create polls or elections in minutes with customizable options
+              tailored to your needs."
+          />
+          {/* <div className="hidden lg:flex items-center justify-center rounded-3xl row-start-1 row-span-2 col-start-2">
             <Image
               src="/images/votespeak.png"
               alt="vote Speaks"
               width={300}
               height={300}
-              className="object-contain w-full max-w-[250px] h-auto"
+              className="object-contain w-full max-w-[250px] h-auto drop-shadow-lg"
             />
-          </div>
-          <div className="bg-featurebg rounded-[20px] flex flex-col gap-[10px] h-[205px] px-[20px] py-[45px] lg:col-start-1 lg:row-start-2">
-            <div className="flex flex-row items-center gap-x-2">
-              <ShieldCheck className="bg-linkbg rounded-[10px] p-[10px] h-[40px] w-[40px] text-white" />
-              <p className="font-bold text-[16px]">Secure & Anonymous</p>
-            </div>
-            <p className="text-[14px] text-left">
-              Every vote is protected with encryption, and voter identities
-              remain completely private.
-            </p>
-          </div>
-          <div className="bg-featurebg rounded-[20px] flex flex-col gap-[10px] h-[205px] px-[20px] py-[45px] lg:col-start-3 lg:row-start-2">
-            <div className="flex flex-row items-center gap-x-2">
-              <MonitorSmartphone className="bg-linkbg rounded-[10px] p-[10px] h-[40px] w-[40px] text-white" />
-              <p className="font-bold text-[16px]">Multi-Device Access</p>
-            </div>
-            <p className="text-[14px] text-left">
-              Edibo works seamlessly on phones, tablets, and desktops — so
-              everyone can vote from anywhere.
-            </p>
-          </div>
+          </div> */}
+          <FeatureCard
+            Icon={<ShieldCheck />}
+            header="Secure & Anonymous"
+            text="Every vote is protected with encryption, and voter identities
+              remain completely private."
+          />
+
+          <FeatureCard
+            Icon={<MonitorSmartphone />}
+            header="Multi-Device Access"
+            text="Edibo works seamlessly on phones, tablets, and desktops — so
+              everyone can vote from anywhere."
+          />
         </div>
       </div>
     </section>

@@ -4,7 +4,7 @@ import KeyFeature from "./sections/KeyFeature";
 
 export default function Home() {
   return (
-    <main className="px-4 lg:px-28">
+    <main className="flex flex-col gap-32 px-4 pt-16 pb-32 lg:px-28">
       <HeroSection />
       <KeyFeature />
     </main>
